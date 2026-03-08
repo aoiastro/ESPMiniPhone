@@ -9,11 +9,10 @@ struct AppEntry {
 };
 
 const AppEntry appList[] = {
-    {"Display Demo", "https://raw.githubusercontent.com/m5stack/M5Unified/master/examples/Basic/Display/Display.ino", "/app1.cpp"},
-    {"Blink Demo", "https://raw.githubusercontent.com/m5stack/M5Unified/master/examples/Basic/Button/Button.ino", "/app2.cpp"},
+    {"Display Demo", "https://raw.githubusercontent.com/aoiastro/ESPMiniPhone/refs/heads/main/littlefs_files/scripts/test.cpp", "/app1.cpp"},
     {"RETURN", "", ""}
 };
-const int appCount = 3;
+const int appCount = 2;
 
 bool AppStore::downloadApp(const char* url, const char* filename) {
     if (!WiFiManager::isConnected()) {
